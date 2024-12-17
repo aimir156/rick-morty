@@ -1,0 +1,115 @@
+.div{
+    width: 80%;
+    height: 56px;
+    grid-template: 55px / repeat(4, 23%);
+    margin: 0 auto;
+    margin-top: 15px;
+    column-gap: 30px;
+    display: grid;
+    justify-content: space-between;
+}
+.input{
+    height: 55px;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+}
+.inputs{
+    height: 55px;
+    /* width: 35%; */
+    border-radius: 7px;
+    row-gap: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 40px;
+    background-image: url('../../assets/Icon (1).png'); 
+    background-repeat: no-repeat;
+    background-position: left 16px center;
+}
+.button{
+    padding: 10px;
+    width: 15%;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 6px 10px 0px #00000024;
+    box-shadow: 0px 1px 18px 0px #0000001F;
+    box-shadow: 0px 3px 5px 0px #00000033;
+    border: none;
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+}
+.contant{
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 6px 10px 0px #00000024;
+    box-shadow: 0px 1px 18px 0px #0000001F;
+    box-shadow: 0px 3px 5px 0px #00000033;
+}
+.div__botton{
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.characters{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 24%);
+    justify-content: center;
+    gap: 24px 24px;
+    margin: 60px 50px 50px;
+    grid-auto-rows: auto;
+    font-family: "Inter", sans-serif;
+    /* box-shadow: 0px 4px 5px 0px #0000001f; */
+}
+
+.characters img{
+    width: 100%;
+    height: auto;
+}
+.h3{
+    color: gray;
+}
+
+@media screen and (max-width: 885px) {
+    .div {
+        grid-template: 56px / repeat(2, 50%);
+        row-gap: 15px;
+    }
+    .characters{
+        grid-template: repeat(4, 244px) / repeat(3, 33%);
+        column-gap: 10px;
+        padding-top: 50px;
+    }
+  }
+
+@media screen and (max-width: 765px) {
+    .characters{
+        grid-template: repeat(4, 248px) / repeat(2, 45%);
+    }
+}
+
+@media screen  and (max-width: 500px){
+    .div{
+        grid-template: 56px / repeat(1, 312px);
+    }
+    .characters{
+        grid-template: repeat(8, 308px) / repeat(1, 312px);
+        padding-top: 40%;
+    }
+    .button {
+        width: 40%;
+        padding: 12px;
+      }
+}
+
+@media screen  and (max-width: 480px){
+    .button {
+        width: 40%; 
+        font-size: 16px;
+        padding: 12px;
+      }
+}

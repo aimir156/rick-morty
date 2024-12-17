@@ -1,0 +1,35 @@
+.img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin:  0 auto; 
+    padding-top: 86px;
+  }
+  
+  .img img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+  }
+  
+  
+  @media screen and  (max-width: 768px) {
+    .img {
+      width: 90%; 
+    }
+  
+    .img img {
+      max-width: 100%; 
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .img {
+      width: 100%; 
+    }
+  
+    .img img {
+      max-width: 100%; 
+    }
+  }
